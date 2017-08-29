@@ -1,7 +1,7 @@
 var makeCatDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
   $imgnode = $('<img src="./img/catGlow.gif"></img>');
-  this.$node.append($imgnode).addClass('catDancer');
+  $(this.$node).append($imgnode).addClass('catDancer');
   this.$node.addClass('catDancerMoving');
 };
 

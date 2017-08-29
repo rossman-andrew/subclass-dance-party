@@ -39,6 +39,10 @@ $(document).ready(function() {
     }
   });
 
+  $('body').on('mouseover', '.dancer', function(event) {  
+    $(this).fadeToggle();
+  });
+
   
 
 });

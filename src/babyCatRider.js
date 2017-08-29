@@ -8,6 +8,13 @@ var makeBabyCatRider = function(top, left, timeBetweenSteps) {
 makeBabyCatRider.prototype = Object.create(makeDancer.prototype);
 makeBabyCatRider.prototype.constructor = makeBabyCatRider;
 
-// makeBabyCatRider.prototype.lineUp = function() {
-//   this.$node.addClass('rightAlign');
-// };
+makeBabyCatRider.prototype.lineUp = function() {
+  // this.$node.addClass('leftAlign');
+  this.$node.toggleClass('catDancerMoving');
+  if (this.$node.hasClass('catDancerMoving')) {
+    this.setPosition(this.top, $("body").width() * Math.random());
+  } else {
+    this.setPosition(this.top, $("body").width() - $("body").width() * 0.15);
+  }
+  
+};
