@@ -28,10 +28,10 @@ body, a:link, a:visited, a:active{
 
 @keyframes animatedCat
 {
-  0% {
+  /*0% {
     transform: rotate(0deg);
     left:0%;
-  }
+  }*/
   25% {
     transform: rotate(20deg);
     left:0%;
@@ -54,11 +54,11 @@ body, a:link, a:visited, a:active{
   }
 }
 .catDancerMoving{
-  position: absolute;
-  animation: animatedCat 5s 1;
-  animation-iteration-count: infinite;
+  position:absolute;
+  animation:animatedCat 5s 2;
+  animation-iteration-count:infinite;
   border-radius:5px;
-  border: none;
+  border:none;
 }
 
 .catDancer{
