@@ -1,7 +1,7 @@
 var makeCatDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
   this.$node = $('<span class="catDancer"><img src="./img/cat.gif"></span>');
-  this.setPosition();
+  makeDancer.prototype.setPosition.call(this, this.top, this.left);
 };
 
 makeCatDancer.prototype = Object.create(makeDancer.prototype);
@@ -9,10 +9,6 @@ makeCatDancer.prototype.constructor = makeCatDancer;
 
 makeCatDancer.prototype.oldStep = function() {
   makeDancer.prototype.step.call(this);
-};
-
-makeCatDancer.prototype.setPosition = function() {
-  makeDancer.prototype.setPosition.call(this, this.top, this.left);
 };
 
 
