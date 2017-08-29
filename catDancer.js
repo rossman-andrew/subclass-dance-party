@@ -1,16 +1,14 @@
 var makeCatDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="dancer catDancer"><img src="../img/cat.gif"></span>');
+  //this.$node = $('<span class="dancer catDancer"></span>');
 };
 
 makeCatDancer.prototype = Object.create(makeDancer.prototype);
 makeCatDancer.prototype.constructor = makeCatDancer;
 
-makeCatDancer.prototype.rotate = function() {
+// makeCatDancer.prototype.rotate = function() {
 
-};
-
-
+// };
 
 
 makeCatDancer.prototype.oldStep = function() {
