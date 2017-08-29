@@ -36,3 +36,13 @@ makeBlinkyDancer.prototype.step = function() {
   // other effects you can use on a jQuery-wrapped html tag.
   this.$node.toggle();
 };
+
+makeBlinkyDancer.prototype.lineUp = function() {
+  // this.setPosition(this.top, 0);
+  this.$node.toggleClass('leftAlign');
+  if (this.$node.hasClass('leftAlign')) {
+    this.setPosition(this.top, 0);
+  } else {
+    this.setPosition(this.top, $("body").width() * Math.random());
+  }
+};

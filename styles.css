@@ -53,15 +53,29 @@ body, a:link, a:visited, a:active{
     left:0px;
   }
 }
-.catDancer{
+.catDancerMoving{
   position: absolute;
   animation: animatedCat 5s 1;
   animation-iteration-count: infinite;
   border-radius:5px;
+  border: none;
+}
+
+.catDancer{
+}
+
+.babyCatRider{
 }
 
 .leftAlign{
-  position:absolute;
+/*  position:absolute;
   left: 0;
-  border: 30px black;
+  border:10px solid red;*/
 }
+/*
+.rightAlign{
+  position:absolute;
+  right:0px;
+  float:right;
+}
+*/
