@@ -59,3 +59,9 @@ body, a:link, a:visited, a:active{
   animation-iteration-count: infinite;
   border-radius:5px;
 }
+
+.leftAlign{
+  position:absolute;
+  left: 0;
+  border: 30px black;
+}
