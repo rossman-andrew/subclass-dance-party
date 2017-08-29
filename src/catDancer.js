@@ -1,6 +1,6 @@
 var makeCatDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="catDancer"><img src="./img/cat.gif"></span>');
+  this.$node = $('<span class="catDancer"><img src="./img/cat2.gif"></span>');
   this.setPosition();
 };
 
