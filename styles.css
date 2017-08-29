@@ -26,6 +26,36 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
+@keyframes animatedCat
+{
+  0% {
+    transform: rotate(0deg);
+    left:0%;
+  }
+  25% {
+    transform: rotate(20deg);
+    left:0%;
+  }
+  50% {
+    transform: rotate(0deg);
+    left:30%;
+  }
+  55% {
+    transform: rotate(-20deg);
+    left:30%;
+  }
+  70% {
+    transform: rotate(180deg);
+    left:30%;
+  }
+  100% {
+    transform: rotate(-360deg);
+    left:0px;
+  }
+}
 .catDancer{
-  position:absolute;
+  position: absolute;
+  animation: animatedCat 5s 1;
+  animation-iteration-count: infinite;
+  border-radius:5px;
 }
