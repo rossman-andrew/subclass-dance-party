@@ -1,7 +1,7 @@
 var makeBabyCatRider = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
   $imgnode = $('<img src="./img/babyCat.gif"></img>');
-  $(this.$node).append($imgnode).addClass('catDancer');
+  $(this.$node).append($imgnode).addClass('catDancer babyCatRider');
   $(this.$node).addClass('catDancerMoving');
 };
 
@@ -14,7 +14,7 @@ makeBabyCatRider.prototype.lineUp = function() {
   if (this.$node.hasClass('catDancerMoving')) {
     this.setPosition(this.top, $("body").width() * Math.random());
   } else {
-    this.setPosition(this.top, $("body").width() - $("body").width() * 0.15);
+    this.setPosition(this.top, $("body").width() - $("body").width() * 0.10);
   }
   
 };

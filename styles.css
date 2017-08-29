@@ -71,10 +71,13 @@ body, a:link, a:visited, a:active{
 
 .catDancer{
   border: none;
+  max-height: 252px;
+  height: 252px;
 }
 
-.babyCatRider{
-  border: none;
+.babyCatRider img{
+  max-height: 252px;
+  height: 252px;
 }
 
 .leftAlign{
