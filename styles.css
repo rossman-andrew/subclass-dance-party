@@ -26,6 +26,18 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
+@keyframes animated_div
+{
+  0% {transform: rotate(0deg);left:0px;}
+  25% {transform: rotate(20deg);left:0px;}
+  50% {transform: rotate(0deg);left:500px;}
+  55% {transform: rotate(0deg);left:500px;}
+  70% {transform: rotate(0deg);left:500px;}
+  100% {transform: rotate(-360deg);left:0px;}
+}
 .catDancer{
-  position:absolute;
+  position: absolute;
+  animation:animated_div 5s 1;
+  animation-iteration-count: infinite;
+  border-radius:5px;
 }
