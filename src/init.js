@@ -44,12 +44,34 @@ $(document).ready(function() {
   });
 
   $('.danceOff').on('click', function(event) {
-    for(var i = 0; i < $('.blinkyDancer').length; i++) {
-      console.log($($('.blinkyDancer')[i]).position());
+    var shortestDistance = {
+      dist: Number.MAX_VALUE,
+      dancer1: -1,
+      dancer2: -1
+    };
+    for (var i = 0; i < $('.blinkyDancer').length; i++) {
+      // console.log($($('.blinkyDancer')[i]).position());
+      for (var j = i + 1; j < $('.blinkyDancer').length; j++) {
+        var dancer1 = $($('.blinkyDancer')[i]);
+        var dancer2 = $($('.blinkyDancer')[j]);
+        var distance = findDistance(dancer1.position().top, dancer1.position().left, dancer2.position().top, dancer2.position().left);
+        if (distance < shortestDistance.dist) {
+          shortestDistance.dist = distance;
+          shortestDistance.dancer1 = dancer1;
+          shortestDistance.dancer2 = dancer2;
+        }
+      }
     }
+    return shortestDistance;
   });
 
-  
+  var findDistance = function(top1, left1, top2, left2) {
+    yLength = (top1 - top2);
+    xLength = (left1 - left2);
+    return Math.sqrt(yLength * yLength + xLength * xLength);
+  };  
+
+    
 
 });
 

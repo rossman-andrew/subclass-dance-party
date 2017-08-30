@@ -47,10 +47,12 @@ body, a:link, a:visited, a:active{
   50% {
     transform: rotate(0deg);
     left:30%;
+    bottom:40%;
   }
   55% {
     transform: rotate(-20deg);
-    left:30%;
+    left:80%;
+    top:60%;
   }
   70% {
     transform: rotate(180deg);
@@ -58,7 +60,7 @@ body, a:link, a:visited, a:active{
   }
   100% {
     transform: rotate(-360deg);
-    left:0px;
+    left:50%;
   }
 }
 .catDancerMoving{
